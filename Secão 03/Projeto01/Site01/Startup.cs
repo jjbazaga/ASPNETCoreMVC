@@ -31,29 +31,8 @@ namespace Site01
             {
                 app.UseDeveloperExceptionPage();
             }
-
-
-            /*
-             * Rotas:
-             * www.site.com.br/noticia/visualizar/
-             * outros exemplos:
-             * www.site.com.br/cliente/lista/
-             * www.site.com.br/cliente/deletar/30
-             * www.site.com.br/cliente/visualizar/30
-             * {domínio}/{controlador}/{Ação}/{Id?} ---> Id? é opcional do tipo: acidente-de-carro-nas-rodovias
-             * ou
-             * padrão:
-             * {domínio}/{Controller=Home}/{Action=Index}/{Id?} ---> Id? é opcional
-            */
-
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
-
-            /*app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
-            */
         }
     }
 }
